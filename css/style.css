@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(3, 153, 223);
+}
+
+
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(3rem,4vw,6rem);
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.493);
+}
+
+.playgrid {
+    margin: 4em auto;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    place-items: center;
+}
+
+.box {
+    margin: 10px;
+    width: 20vw;
+    height: 20vw;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.one {
+    background: rgb(255,0,0);
+    justify-self: end;
+}
+
+.two {
+    background: rgb(255,255,0);
+    justify-self: start;
+}
+
+.three {
+    background: rgb(0,0,255);
+    justify-self: end;
+}
+
+.four {
+    background: rgb(0, 209, 0);
+    justify-self: start;
+}
+
+.one:hover{
+    background: rgb(156, 0, 0);
+    cursor: pointer;
+}
+
+.two:hover{
+    background: rgb(158, 158, 0);
+    cursor: pointer;
+}
+
+.three:hover{
+    background: rgb(0, 0, 134);
+    cursor: pointer;
+}
+
+.four:hover{
+    background: rgb(0, 128, 0);
+    cursor: pointer;
+}
+
+.one.active {
+    background: rgb(156, 0, 0);
+}
+
+.two.active {
+    background: rgb(158, 158, 0);
+}
+
+.three.active {
+    background: rgb(0, 0, 134);
+}
+
+.four.active {
+    background: rgb(0, 128, 0);
+}
+
+.start-button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background: rgb(0, 255, 136);
+    border-radius: 12px;
+    border: none;    
+}
+
+.start-button:hover {
+    background: rgb(146, 248, 201);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (min-width: 768px){
+    .box{
+        width: 10em;
+        height: 10em;
+    }
+}
